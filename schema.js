@@ -8,6 +8,11 @@ const {
     GraphQLSchema
 } = require('graphql');
 
+
+/**
+ * Note that i am going to add more object types to this application
+ * to make it extensive and funtional and also solidify my graphQL learning
+ */
 // Launch Type
 const LaunchType = new GraphQLObjectType({
     name: 'Launch',
@@ -79,3 +84,8 @@ const RootQuery = new GraphQLObjectType({
 module.exports = new GraphQLSchema({
     query: RootQuery
 });
+
+/**
+ * So I will review this guys, note that this is the schema setup for the server, react hasn't been implemented.
+ * In the converge app, note that this would probably have been implemented using python
+ */
